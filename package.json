@@ -1,0 +1,32 @@
+{
+  "name": "bots-foundation",
+  "repository": "",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/api/server.ts",
+  "scripts": {
+    "start": "node build/AppServer.js",
+    "start:build": "npm run build && node build/AppServer.js",
+    "dev": "ts-node --files ./src/AppServer.ts",
+    "build": "npm run clean && tsc",
+    "watch": "nodemon --watch ./src/ --exec npm run dev",
+    "clean": "rm -rf build/"
+  },
+  "author": "Olivier Brassard",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "inversify": "^5.0.1",
+    "inversify-express-utils": "^6.3.2",
+    "reflect-metadata": "^0.1.13",
+    "typescript": "^3.7.4"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.2",
+    "@types/node": "^13.1.8",
+    "nodemon": "^2.0.4",
+    "ts-node": "^8.6.2"
+  }
+}

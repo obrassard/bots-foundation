@@ -1,0 +1,16 @@
+version: '3'
+services:
+  node:
+    build: ./
+    image: obrassard/node_typescript
+    container_name: node_ts
+    ports:
+      - 3000:3000
+    volumes:
+      - .:/app
+    working_dir: /app
+    command: >
+      bash -c "
+      rm -Rf node_module && 
+      npm install && 
+      npm run watch"
