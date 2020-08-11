@@ -4,7 +4,7 @@ import { BotsRegistry } from '../../core/BotsRegistry';
 import { IBot } from '../../core/bots/IBot';
 
 @controller("/")
-export class AppController {
+export class QueriesController {
 
     @httpGet('/')
     public async queryDefault(@request() req: Request, @response() res: Response) {

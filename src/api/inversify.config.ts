@@ -1,7 +1,7 @@
 import {Container} from "inversify";
 import TYPES from "./constant/Types";
 
-import "./controllers/HomeController";
+import "./controllers/QueriesController";
 
 let container = new Container;
 
