@@ -1,5 +1,4 @@
-# Node-Ts-Express StarterKit
-NodeJS + TypeScript + ExpressJS + Inversify
+# BotsFoundation
 
 ## Getting started
 
