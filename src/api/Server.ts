@@ -21,7 +21,7 @@ export abstract class Server {
         const app = server.build();
         app.listen(PORT);
 
-        console.log(`Server listening on port ${PORT}`);
+        console.log(`Server listening on  http://localhost:${PORT}`);
     }
 
     protected abstract registerBots(): void;
